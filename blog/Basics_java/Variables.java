@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Date;
 
 public class Variables{
@@ -35,5 +36,26 @@ public class Variables{
         System.out.println(my_name.replace("Dina", "Diaro"));
         System.out.println("-----------------------------");
 
+        int[] numbers = new int[4];
+        numbers[0] = 2;
+        numbers[1] = 4;
+        numbers[2] = 6;
+        numbers[3] = 8;
+        System.out.println(Arrays.toString(numbers));
+        System.out.println("-----------------------------");
+
+        int[] numbers_1 = {1, 3, 5, 7};
+        System.out.println(numbers_1.length);
+        System.out.println("-----------------------------");
+
+        int[][] numbers_2 = new int[2][3];
+        numbers_2[0][0] = 1;
+        numbers_2[0][1] = 3;
+        System.out.println(Arrays.deepToString(numbers_2));
+        System.out.println("-----------------------------");
+
+        int[][] numbers_3 = {{ 1, 2, 3}, { 4, 5, 6}, { 7, 8, 9}};
+        System.out.println(Arrays.deepToString(numbers_3));
+        System.out.println("-----------------------------");
     }
 }
