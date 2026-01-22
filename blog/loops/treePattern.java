@@ -1,3 +1,5 @@
+package blog.loops;
+
 public class treePattern {
     public static void main(String[] args) {
         int height = 5; 
