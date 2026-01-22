@@ -1,8 +1,12 @@
 package blog.Conditions;
 
+import java.util.Scanner;
+
 public class gradeCalculator {
     public static void main(String[] args) {
-        int score = 85;
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter Your score:");
+        int score = input.nextInt();
         if (score >= 90){
             System.out.println("Grade A");
         } else if (score >= 80) {
