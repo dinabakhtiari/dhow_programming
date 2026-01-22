@@ -1,13 +1,11 @@
 public class hourglassPattern {
     public static void main(String[] args) {
-        int n = 5; // تعداد ستاره‌های بیشترین ردیف
+        int n = 5; 
 
-        // --- نیمه بالایی الگو ---
         for (int i = n; i >= 1; i--) {
             printRow(i, n);
         }
 
-        // --- نیمه پایینی الگو ---
         for (int i = 2; i <= n; i++) {
             printRow(i, n);
         }
@@ -20,8 +18,6 @@ public class hourglassPattern {
             System.out.print("*");
         }
 
-        // ۲. چاپ فاصله‌های خالی وسط
-        // فرمول فاصله: (حداکثر ستاره - ستاره‌های فعلی) ضربدر ۲
         int spaces = 2 * (total - stars);
         for (int j = 1; j <= spaces; j++) {
             System.out.print(" ");
