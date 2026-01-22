@@ -1,4 +1,4 @@
-package blog.exceptions;
+package blog.Conditions;
 
 import java.util.Scanner;
 
