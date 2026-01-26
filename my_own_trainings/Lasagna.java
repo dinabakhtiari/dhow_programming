@@ -9,9 +9,14 @@ public class Lasagna{
         return expectedMinutesInOven() - actualMinutes;
     }
 
+    public int preparationTimeInMinutes(int layers) {
+        return layers * 2;
+    }
+    
     public static void main(String[] args) {
         Lasagna lasagna = new Lasagna();
         System.out.println(lasagna.expectedMinutesInOven());
         System.out.println(lasagna.remainingMinutesInOven(30));
+        System.out.println(lasagna.preparationTimeInMinutes(2));
     }
 }
