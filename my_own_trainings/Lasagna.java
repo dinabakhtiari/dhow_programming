@@ -5,8 +5,13 @@ public class Lasagna{
         return 40;
     }
 
+    public int remainingMinutesInOven(int actualMinutes) {
+        return expectedMinutesInOven() - actualMinutes;
+    }
+
     public static void main(String[] args) {
         Lasagna lasagna = new Lasagna();
         System.out.println(lasagna.expectedMinutesInOven());
+        System.out.println(lasagna.remainingMinutesInOven(30));
     }
 }
