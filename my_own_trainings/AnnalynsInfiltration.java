@@ -15,10 +15,18 @@ public class AnnalynsInfiltration {
 
         return prisonerIsAwake && !archerIsAwake;
     }
-    public static void main(String[] args) {
 
-       AnnalynsInfiltration annalynsInfiltration = new AnnalynsInfiltration();
-       System.out.println(annalynsInfiltration.canSignalPrisoner(false, true));
+    public static boolean canFreePrisoner(boolean knightIsAwake, boolean archerIsAwake, boolean prisonerIsAwake, boolean petDogIsPresent) {
+
+       if (petDogIsPresent) {
+        return !archerIsAwake;
+    } else {
+        return prisonerIsAwake && !knightIsAwake && !archerIsAwake;
+        }
     }
 
+    public static void main(String[] args) {
+        boolean result = AnnalynsInfiltration.canFreePrisoner(false, false, true, true);
+        System.out.println("Can Annalyn free the prisoner? " + result);
+    }
 }
