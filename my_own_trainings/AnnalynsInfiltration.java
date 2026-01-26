@@ -11,10 +11,14 @@ public class AnnalynsInfiltration {
         return knightIsAwake || archerIsAwake || prisonerIsAwake;
     }
 
+    public static boolean canSignalPrisoner(boolean archerIsAwake, boolean prisonerIsAwake) {
+
+        return prisonerIsAwake && !archerIsAwake;
+    }
     public static void main(String[] args) {
 
        AnnalynsInfiltration annalynsInfiltration = new AnnalynsInfiltration();
-       System.out.println(annalynsInfiltration.canSpy(false, false, true));
+       System.out.println(annalynsInfiltration.canSignalPrisoner(false, true));
     }
 
 }
