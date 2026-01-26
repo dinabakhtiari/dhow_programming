@@ -6,9 +6,15 @@ public class AnnalynsInfiltration {
         return !knightIsAwake;
     }
 
+    public static boolean canSpy(boolean knightIsAwake, boolean archerIsAwake, boolean prisonerIsAwake) {
+
+        return knightIsAwake || archerIsAwake || prisonerIsAwake;
+    }
+
     public static void main(String[] args) {
 
        AnnalynsInfiltration annalynsInfiltration = new AnnalynsInfiltration();
-       System.out.println(annalynsInfiltration.canFastAttack(true));
+       System.out.println(annalynsInfiltration.canSpy(false, false, true));
     }
+
 }
